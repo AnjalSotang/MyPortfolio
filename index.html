@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+  <script src="https://kit.fontawesome.com/567a4cdb45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo nav-box">
+        <img src="./assets/logo.png" alt="" />
+      </div>
+      <div class="nav-links">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Work</a>
+        <a href="">Services</a>
+        <a href="">Testimonail</a>
+        <a href="">Blog</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="links nav-box">
+        <div>
+          <a href="">Let's Talk</a>
+          <span class="material-symbols-outlined"> arrow_right_alt </span>
+        </div>
+
+        <div class="hamburger">
+          <span class="material-symbols-outlined"> density_medium </span>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main">
+      <div class="hero">
+        <div class="heroDetails">
+          <div class="heroContent">
+            <div>
+              <h3>
+                Currently available for freelance <br />
+                Worldwide
+              </h3>
+              <div class="underline"></div>
+            </div>
+
+            <h1>
+              <span>Full Stack</span>
+              <span class="developer">Developer</span>
+            </h1>
+          </div>
+        </div>
+        <div class="image">
+          <div class="img1">
+            <img src="/assets/profile.png" alt="" />
+          </div>
+        </div>
+
+        <div class="leftBanner">
+          <div class="topLeft">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAZCAYAAAA8CX6UAAAChElEQVQ4ja3UW4jWVRQF8N98aig4VpqlpihoRlGQiiL6YhQGAz4F9iYoXiAQIQqieughiIIeFMwngxBBvGHRfEEJQSQlluINxUulA16DMcskU5Md64OvcUYQXS//zdnnrP8+a+19Orq7uxfjdTyIrViDn/EYVmIpLuJTrEcvnsJbWIC9WDsYr+JJDMrBH0P0BJbh0ZC+iS9D9CJexjDMw5AGngtJoZHKCg+HpIVReCDxpJAUOvB4HdyMq1n8CfsTn8IPbUQ7csXC9ziZ+Hdsqqu9h93Fim+xLxuO4w08n4q7cSG5r3ENs0O+o8R2L+jq6vrvdFU0AlNKMPTgPG5Er9HRo/7+a65xM+cmYGyz2byEX2pz2f85duJ9TE2BY/EOvsFnaZGRyT2L1fgOG/BKI5aPw3AswtxsrpZYHncmRK9xyb2UHirHpuO1IhqThRZa8bA2u1ut0co91EfWjkquw7ks1PX2JD6GbfgH/+KTPvt2Jf6tcuValTsDj6SHDuPviD85DdtIi1RvXU+1z+BplNi77qv9VdEcDMUBHI3dQ9IWM3ElXd+T1qi902p4m83mmZKjNbSr4tpXeDuDW069i4X4A1vSDmcxCx+ks+u66xqxeHgqnZ9NMv0LE3diSRwuvBCSwsTiaMSRdvw5gBy9cbAv6vz5IvoQR3L3jW0TX2trM5SXEp9N7gtsj7sn6mrlWmfmqTNinmmbtVEpvSOPXW/brNUIjcdf9VIMjpAH+yn5Zqq52E/uen7a027/QBga4WuuLucNOpTWuA13Ipoc++thK0HruyJ234bSYSCUbnW4UBpVZTVG/eJORCVi6y0v1MNWHX7XRDUqH8Xe0/i4bfr/D9wCSdykp1ScNBQAAAAASUVORK5CYII="
+              alt="" />
+            <p>(+977)-9702936485</p>
+          </div>
+          <!-- New banner below -->
+          <div class="bottomLeft">
+            <p>SCROLL DOWM</p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAADBCAYAAAC0XlJdAAADLElEQVR4nO3dTYhNYRzH8e9oZGIhUfJSCgs1NYWN1ywkhQkbJSUsTrEQEiIiUkrJezM2CuVlgRmlRKTxzkLJysZbCgspZMZbR381aWbu3HOfnzH1+9bt3s6ce87n3jnnOc9Z3aqGhgYE3QAWAB9KbTrLsrL23kehVWawOoPVGazOYHUGqzNYncHqDFZnsDqD1RmszmB1BqszWJ3B6gxWZ7A6g9UZrM5gdQarM1idweoMVmewOoPVGazOYHUGqzNYncHqDFZnsDqD1RmszmB1BqszWJ3B6gxWZ7A6g9UZrM5gdQarM1idweoMVmewOoPVGazOYHUGqzNYncHqDFZnsDqD1RmszmB1BqszWJ3B6gxWZ7A6g9UZrM5gdQarM1idweoMVmewOoPVGazOYHUGqzNYncHqDFZnsLpeB64GRgOvgNb/wNNpjY2NA4GaHHwAGBkrtgCXgGtAWw8DhwALgdlAbfwi5oUcPC/W6Q/MAOYD+4Hz8fzmH0OnAWuBMcAZYBfwOMuyn8Qh8afPwOV49AOWAlfisQP4KIbWAXuBr8CeLMtaOlqvuqOF8aZjwHFgJXAX2Ag0C6D5l7MdmAmsz7LsZlfrlxol2uIYz4+j1fG6sw9ZpFHA9Tjhp5bCUsbOXwZ6d5yUixIcIhOA08CqLMuudvdN5YzDP4BNQFMc1wOKOX83CTgB1JeDpeC/9wiQn7EXgTkFxu/aOD/y0ehZuTsveqU7CtwBDpb5vkHAOWB5ESwVXpq3AcOBJd1cvypGnfw8eFh0p5Wc8flhsQK4Hb/P/LrE+stirD9ZwT4rnvy8A7YA+0qsNxjYEENjRaWYrZ0FhgKTu1hnK3AoPmCPg/M2Azs7+dswYFaMDBWXCnwrtlXXwd/WxSQqyfQ15QT+MLDmr2V9Y4p4KtVOUoKb4jiuabesPmZ/n1LtJCU4nyjll9m57ZYtjjltslLf0zXH7+UTY/z4uCL+t+D8AjIxXk+Jk/F7yh2kBrfGFW8sMD3uEZOmuM1/BIyIb/pBbwDfj+dxwJPUG1eAn8bzW+Bb6o0rwM/j+YVg2xLwF+C9CpzyDrh9+UT9XvKtAr8ASJF/F9PufdsAAAAASUVORK5CYII="
+              alt="" />
+          </div>
+        </div>
+
+        <div class="rightBanner">
+          <div class="topRight">
+            <p>FOLLOW ME</p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAADBCAYAAAC0XlJdAAADLElEQVR4nO3dTYhNYRzH8e9oZGIhUfJSCgs1NYWN1ywkhQkbJSUsTrEQEiIiUkrJezM2CuVlgRmlRKTxzkLJysZbCgspZMZbR381aWbu3HOfnzH1+9bt3s6ce87n3jnnOc9Z3aqGhgYE3QAWAB9KbTrLsrL23kehVWawOoPVGazOYHUGqzNYncHqDFZnsDqD1RmszmB1BqszWJ3B6gxWZ7A6g9UZrM5gdQarM1idweoMVmewOoPVGazOYHUGqzNYncHqDFZnsDqD1RmszmB1BqszWJ3B6gxWZ7A6g9UZrM5gdQarM1idweoMVmewOoPVGazOYHUGqzNYncHqDFZnsDqD1RmszmB1BqszWJ3B6gxWZ7A6g9UZrM5gdQarM1idweoMVmewOoPVGazOYHUGqzNYncHqDFZnsLpeB64GRgOvgNb/wNNpjY2NA4GaHHwAGBkrtgCXgGtAWw8DhwALgdlAbfwi5oUcPC/W6Q/MAOYD+4Hz8fzmH0OnAWuBMcAZYBfwOMuyn8Qh8afPwOV49AOWAlfisQP4KIbWAXuBr8CeLMtaOlqvuqOF8aZjwHFgJXAX2Ag0C6D5l7MdmAmsz7LsZlfrlxol2uIYz4+j1fG6sw9ZpFHA9Tjhp5bCUsbOXwZ6d5yUixIcIhOA08CqLMuudvdN5YzDP4BNQFMc1wOKOX83CTgB1JeDpeC/9wiQn7EXgTkFxu/aOD/y0ehZuTsveqU7CtwBDpb5vkHAOWB5ESwVXpq3AcOBJd1cvypGnfw8eFh0p5Wc8flhsQK4Hb/P/LrE+stirD9ZwT4rnvy8A7YA+0qsNxjYEENjRaWYrZ0FhgKTu1hnK3AoPmCPg/M2Azs7+dswYFaMDBWXCnwrtlXXwd/WxSQqyfQ15QT+MLDmr2V9Y4p4KtVOUoKb4jiuabesPmZ/n1LtJCU4nyjll9m57ZYtjjltslLf0zXH7+UTY/z4uCL+t+D8AjIxXk+Jk/F7yh2kBrfGFW8sMD3uEZOmuM1/BIyIb/pBbwDfj+dxwJPUG1eAn8bzW+Bb6o0rwM/j+YVg2xLwF+C9CpzyDrh9+UT9XvKtAr8ASJF/F9PufdsAAAAASUVORK5CYII="
+              alt="" />
+          </div>
+          <div class="bottomRight">
+            <a href="https://www.facebook.com/anzal.kubiti/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/anjal-rai-407335307/"> <i class="fa-brands fa-linkedin"></i></a>
+            <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/anjal_rai2004/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <!-- New banner below -->
+        </div>
+      </div>
+
+    </section>
+
+    <section class="scroller">
+      <div class="scroller-in">
+        <span>
+          <h4>Frontend Developer</h4>
+          <h4>Backend Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+        </span>
+      </div>
+
+      <div class="scroller-in">
+        <span>
+          <h4>Frontend Developer</h4>
+          <h4>Backend Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+        </span>
+      </div>
+    </section>
+    <section class="about">
+      <div class="intro">
+        <img src="assets/about.png" alt="">
+        <p>I'm David Matias, I'm a Brand & Webflow Designer, Currently residing in the lush Victoria Street London,
+          Matias operates globally and is ready to take on any design challenge.</p>
+        <div class="buttons">
+          <button class="active" data-target="personalInfo">ABOUT</button>
+          <button data-target="experienceInfo">EXPERIENCE</button>
+          <button data-target="educationInfo">EDUCATION</button>
+          <button data-target="skillInfo">SKILLS</button>
+        </div>
+
+      </div>
+      <div class="infos">
+        <div class="infoImg">
+          <img src="/assets/image.png" alt="">
+        </div>
+
+        <div class="infoContent infoContentActive" id="personalInfo">
+          <h2>Personal Info</h2>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut
+            enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+          <div class="infoCard">
+            <div class="card1">
+              <span class="span1">Email</span>
+              <span class="span2">anjalsotang26@gmail.com</span>
+            </div>
+            <div class="card1">
+              <span class="span1">Phone</span>
+              <span class="span2">+(977) 9702936485</span>
+            </div>
+            <div class="card1">
+              <span class="span1">Location</span>
+              <span class="span2">Itahari 4, Sunsari</span>
+            </div>
+            <div class="card1">
+              <span class="span1">Follow</span>
+              <div style="display: flex; gap: 25px;">
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512">
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+
+
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 448 512">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 1024 1024">
+                    <path
+                      d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 496 512">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9c1.6 2.3 4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="infoContent" id="experienceInfo">
+          <h2>My Experience</h2>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut
+            enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+          <div class="experienceCard">
+            <div class="card">
+              <span>In 2011</span>
+              <div class="position">
+                <h3>Software Engineer</h3>
+                <p>UI Head & Manager</p>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <span>In 2016</span>
+              <div class="position">
+                <h3>Product Designer</h3>
+                <p>Head of Departmen</p>
+              </div>
+            </div>
+
+            <div class="card" id="cardExt">
+              <span>In 2023</span>
+              <div class="position">
+                <h3>Senior UI Designer</h3>
+                <p>Fiverr.com</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="infoContent" id="educationInfo">
+          <h2>My Education</h2>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut
+            enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+          <div class="experienceCard">
+            <div class="card">
+              <span>2011-2013</span>
+              <div class="position">
+                <h3>Programming Course</h3>
+                <p>New York University</p>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <span>2013-2016</span>
+              <div class="position">
+                <h3>University of Design</h3>
+                <p>Kingston, United States</p>
+              </div>
+            </div>
+
+            <div class="card" id="cardExt">
+              <span>2016-2018</span>
+              <div class="position">
+                <h3>Web Design Course</h3>
+                <p>New York University</p>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="infoContent" id="skillInfo">
+          <h2>My Skills</h2>
+          <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut
+            enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+          <div class="infoCard">
+            <div class="card1">
+              <span class="span1">Email</span>
+              <span class="span2">anjalsotang26@gmail.com</span>
+            </div>
+            <div class="card1">
+              <span class="span1">Phone</span>
+              <span class="span2">+(977) 9702936485</span>
+            </div>
+            <div class="card1">
+              <span class="span1">Location</span>
+              <span class="span2">Itahari 4, Sunsari</span>
+            </div>
+            <div class="card1">
+              <span class="span1">Follow</span>
+              <div style="display: flex; gap: 25px;">
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512 512">
+                    <path
+                      d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48c27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+
+
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 448 512">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5c0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7c-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5c67.2 0 79.7 44.3 79.7 101.9V416z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 1024 1024">
+                    <path
+                      d="M512 378.7c-73.4 0-133.3 59.9-133.3 133.3S438.6 645.3 512 645.3S645.3 585.4 645.3 512S585.4 378.7 512 378.7zM911.8 512c0-55.2.5-109.9-2.6-165c-3.1-64-17.7-120.8-64.5-167.6c-46.9-46.9-103.6-61.4-167.6-64.5c-55.2-3.1-109.9-2.6-165-2.6c-55.2 0-109.9-.5-165 2.6c-64 3.1-120.8 17.7-167.6 64.5C132.6 226.3 118.1 283 115 347c-3.1 55.2-2.6 109.9-2.6 165s-.5 109.9 2.6 165c3.1 64 17.7 120.8 64.5 167.6c46.9 46.9 103.6 61.4 167.6 64.5c55.2 3.1 109.9 2.6 165 2.6c55.2 0 109.9.5 165-2.6c64-3.1 120.8-17.7 167.6-64.5c46.9-46.9 61.4-103.6 64.5-167.6c3.2-55.1 2.6-109.8 2.6-165zM512 717.1c-113.5 0-205.1-91.6-205.1-205.1S398.5 306.9 512 306.9S717.1 398.5 717.1 512S625.5 717.1 512 717.1zm213.5-370.7c-26.5 0-47.9-21.4-47.9-47.9s21.4-47.9 47.9-47.9s47.9 21.4 47.9 47.9a47.84 47.84 0 0 1-47.9 47.9z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+                <a href="#" class="span2" style="text-decoration: none;">
+                  <svg style="width: 20px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 496 512">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9c1.6 2.3 4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="scroller">
+      <div class="scroller-in">
+        <span>
+          <h4>Frontend Developer</h4>
+          <h4>Backend Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+        </span>
+      </div>
+
+      <div class="scroller-in">
+        <span>
+          <h4>Frontend Developer</h4>
+          <h4>Backend Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+          <h4>Full Stack Developer</h4>
+        </span>
+      </div>
+    </section>
+    <section class="awards">
+      <div>
+        <div class="award">
+          <h1>Our Awards</h1>
+          <p style=" color: rgb(201, 243, 29);">View My Work</p>
+        </div>
+        <div class="award">
+          <h3>Site Of The Day</h3>
+          <h3> Css & Animation</h3>
+          <h3>2018</h3>
+        </div>
+        <div class="award">
+          <h3>Site Of The Day</h3>
+          <h3> Css & Animation</h3>
+          <h3>2018</h3>
+        </div>
+        <div class="award">
+          <h3>Site Of The Day</h3>
+          <h3> Css & Animation</h3>
+          <h3>2018</h3>
+        </div>
+        <div class="award">
+          <h3>Site Of The Day</h3>
+          <h3> Css & Animation</h3>
+          <h3>2018</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div>
+        <span class="heading">Complete Projects</span>
+        <span class="info">
+          Look at my portfolio and give me your feedback
+        </span>
+        <div class="gallary">
+
+          <div class="left">
+            <div class="pics">
+              <div class="imge img1 ">
+                <img src="https://matias-react-js.netlify.app/assets/pro3-454e8e4f.png" alt="">
+              </div>
+              <div class="details">
+                <div>
+                  <h3 style="text-transform: uppercase;">Product Design</h3>
+                  <h2>Design & Branding Mokeup</h2>
+                </div>
+                <a href="">Live Preview</a>
+              </div>
+            </div>
+            <div class="pics">
+              <div class="imge">
+                <img src="https://matias-react-js.netlify.app/assets/pro3-454e8e4f.png" alt="">
+              </div>
+              <div class="details">
+                <div>
+                  <h3 style="text-transform: uppercase;">Product Design</h3>
+                  <h2>Design & Branding Mokeup</h2>
+                </div>
+                <a href="">Live Preview</a>
+              </div>
+            </div>
+            <div class="pics">
+              <div class="imge">
+                <img src="https://matias-react-js.netlify.app/assets/pro3-454e8e4f.png" alt="">
+              </div>
+              <div class="details">
+                <div>
+                  <h3 style="text-transform: uppercase;">Product Design</h3>
+                  <h2>Design & Branding Mokeup</h2>
+                </div>
+                <a href="">Live Preview</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="pics">
+              <div class="imge">
+                <img src="https://matias-react-js.netlify.app/assets/pro3-454e8e4f.png" alt="">
+              </div>
+              <div class="details">
+                <div>
+                  <h3 style="text-transform: uppercase;">Product Design</h3>
+                  <h2>Design & Branding Mokeup</h2>
+                </div>
+                <a href="">Live Preview</a>
+              </div>
+            </div>
+            <div class="pics">
+              <div class="imge">
+                <img src="https://matias-react-js.netlify.app/assets/pro3-454e8e4f.png" alt="">
+              </div>
+              <div class="details">
+                <div>
+                  <h3 style="text-transform: uppercase;">Product Design</h3>
+                  <h2>Design & Branding Mokeup</h2>
+                </div>
+                <a href="">Live Preview</a>
+              </div>
+            </div>
+            <div class="pics">
+              <div class="imge img1">
+                <img src="https://matias-react-js.netlify.app/assets/pro3-454e8e4f.png" alt="">
+              </div>
+              <div class="details">
+                <div>
+                  <h3 style="text-transform: uppercase;">Product Design</h3>
+                  <h2>Design & Branding Mokeup</h2>
+                </div>
+                <a href="">Live Preview</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="viewMore">
+          <a href="#" class="circle-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" fill="currentColor">
+              <path
+                d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z" />
+            </svg>
+            <span>Click Here</span>
+          </a>
+
+          <a href="#" class="back">
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="connect">
+      <div>
+        <div class="information">
+          <div class="intro">
+            <h3 class="heading">Need a Project?</h3>
+            <h1 class="slogan">Let's work together. fixed a meeting</h1>
+          </div>
+          <div class="contactData">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z" />
+            </svg>
+            <div class="data">
+              <span class="label">Email</span>
+              <span class="value">anjalsotang26@gmail.com</span>
+            </div>
+
+          </div>
+          <div class="contactData">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+              <path
+                d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z" />
+            </svg>
+            <div class="data">
+              <span class="label">Location</span>
+              <span class="value">Itahari 13, Sunsari, Nepal</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="sticker">
+          <img src="assets/connect.png" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <section class="services">
+      <div>
+        <h3 class="heading">Services That i provide</h3>
+        <h1>
+          My Special Service For Your Business Development
+        </h1>
+
+        <div class="servicesList">
+          <div class="service firstService">
+            <div>
+              <span>01</span>
+              <div class="serviceName">
+                <h5>Designer</h5>
+                <h2>Illustration Design</h2>
+              </div>
+            </div>
+
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              sunt
+              in culpa qui officia deserunt mollit</p>
+
+            <a href="#" class="icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="24" height="24" fill="currentColor">
+                <path
+                  d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+              </svg>
+            </a>
+
+          </div>
+
+
+          <div class="service">
+            <div>
+              <span>01</span>
+              <div class="serviceName">
+                <h5>Designer</h5>
+                <h2>Illustration Design</h2>
+              </div>
+            </div>
+
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              sunt
+              in culpa qui officia deserunt mollit</p>
+
+            <a href="#" class="icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="24" height="24" fill="currentColor">
+                <path
+                  d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+              </svg>
+            </a>
+
+          </div>
+
+
+          <div class="service">
+            <div>
+              <span>01</span>
+              <div class="serviceName">
+                <h5>Designer</h5>
+                <h2>Illustration Design</h2>
+              </div>
+            </div>
+
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              sunt
+              in culpa qui officia deserunt mollit</p>
+
+            <a href="#" class="icon-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="24" height="24" fill="currentColor">
+                <path
+                  d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </section>
+
+    <section>
+
+    </section>
+
+
+
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
