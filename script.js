@@ -13,3 +13,5 @@ buttons.forEach(button => {
     targetContent.classList.add("infoContentActive"); // fixed typo
   });
 });
+
+
