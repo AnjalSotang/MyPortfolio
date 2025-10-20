@@ -981,7 +981,6 @@
     font-weight: 400;
 
   }
-
   .service>div{
     display: flex;
     gap: 40px;
@@ -1306,26 +1305,42 @@ li::marker {
 }
 
 
-.tests2 .pag button:hover::after {
-  background-color: var(--base); /* optional: inner dot color change on hover */
+/* Active button styling */
+.tests2 .pag button.contActive::after { 
+  background-color: var(--base); 
 }
 
-.tests2 .pag button:hover::before {
-  border-color: 2px solid var(--base);
+/* Hover effect */
+.tests2 .pag button.contActive::before {
+  border: 2px solid var(--base);
 }
-
 
   .tests2 .testCon{
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 45px;
     justify-content: center;
     position: relative;
     z-index: 2;
+    animation: slideUp 600ms ease-in forwards ;
+
   }
 
+    @keyframes slideUp {
+    from{
+      transform: translatex(30%);
+      opacity: 0;
+    }
+    to{
+      transform: translatex(0%);
+      opacity: 1;
+    }
+  }
 
+.tests2 .testActive{
+  display: flex;
+}
 
 
 .ratings {
