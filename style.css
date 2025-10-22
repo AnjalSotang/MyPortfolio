@@ -9,6 +9,7 @@
 
   body {
     background-color: black;
+      overflow-x: hidden;
   }
 
   header {
@@ -19,7 +20,7 @@
     z-index: 99;
     top: 0; /* fix it at the very top */
     left: 0; /* align with left edge */
-    width: 100%;
+    width: 100vw;
   }
 
   nav {
@@ -108,7 +109,7 @@
 
   .main {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     /* background-color: red; */
     background-image: url("assets/background.png");
@@ -264,35 +265,34 @@
     transform: rotate(-90deg);
   }
 
-  .scroller {
-    background: rgb(201, 243, 29);
-    white-space: nowrap;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: var(--width);
-    transform: var(--transform);
-  }
+.scroller {
+  background: rgb(201, 243, 29);
+  white-space: nowrap;
+  overflow: hidden; /* Keep animation inside */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%; /* FIXED: no custom var-width */
+  transform: var(--transform);
+}
 
-  .scroller-in {
-    --play: running;
-    --direction: normal;
-    --duration: 30s;
-    --delay: 0s;
-    --iteration-count: infinite;
-    --min-width: 58%;
-    flex: 0 0 auto;
-    min-width: var(--min-width);
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
-    animation-play-state: var(--play);
-    animation-delay: var(--delay);
-    animation-direction: var(--direction);
-  }
+.scroller-in {
+  --play: running;
+  --direction: normal;
+  --duration: 30s;
+  --delay: 0s;
+  --iteration-count: infinite;
+  --min-width: 100%; /* FIXED */
+  
+  flex: 0 0 auto;
+  display: inline-flex; /* FIXED: inline-flex avoids parent overflow */
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+
 
   .scroller-in span {
     display: flex;
@@ -1049,8 +1049,6 @@
 
 }
 
-
-
 .workFlow .heading {
     font-family: Caveat, cursive;
     position: relative;
@@ -1172,7 +1170,7 @@ li::marker {
 }
 
 .testmonials{
-  width: 100vw;
+  width: 100%;
   background-color: #141410;
 
 }
@@ -1323,17 +1321,17 @@ li::marker {
     justify-content: center;
     position: relative;
     z-index: 2;
-    animation: slideUp 600ms ease-in forwards ;
+    animation: slideLeft 1000ms ease-in-out forwards ;
 
   }
 
-    @keyframes slideUp {
+    @keyframes slideLeft {
     from{
-      transform: translatex(30%);
+      transform: translatex(100px);
       opacity: 0;
     }
     to{
-      transform: translatex(0%);
+      transform: translatex(0);
       opacity: 1;
     }
   }
@@ -1385,7 +1383,52 @@ li::marker {
 }
 
 
+.companies{
+  max-width: 100%;
+  background-color: #1a1a1a;
+}
+
+.companies>div{
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  /* background-color: red; */
+  align-items: center;
+}
+
+.companies .desc{
+  font-size: 24px;
+  font-family: Kanit, sans-serif;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.companies .companyLogos{
+  /* margin: 0 80px; */
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
 
 
+.companyLogos img {
+  height: 30px; /* keeps consistent logo height */
+  width: auto; /* maintain aspect ratio */
+  object-fit: contain;
+  filter: grayscale(100%); /* makes them uniform */
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
 
+.companyLogos img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
 
