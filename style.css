@@ -706,7 +706,7 @@
   }
 
 
-  .circle-btn {
+ .circle-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1172,7 +1172,6 @@ li::marker {
 .testmonials{
   width: 100%;
   background-color: #141410;
-
 }
 
 .testmonials>div{
@@ -1182,7 +1181,7 @@ li::marker {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  /* background-color: red; */
+  /* background-color: yellow; */
   align-items: center;
 }
 
@@ -1382,16 +1381,10 @@ li::marker {
   font-size: 18px;
 }
 
-
 .companies{
-  max-width: 100%;
-  background-color: #1a1a1a;
-}
-
-.companies>div{
-  max-width: 80%;
-  margin: 0 auto;
-  padding: 90px 0;
+  width: 100%;  
+  margin-top: 40px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   gap: 60px;
@@ -1432,3 +1425,218 @@ li::marker {
   transform: scale(1.05);
 }
 
+.blogs{
+  width: 100%;
+  background-color: #1a1a1a;
+}
+
+.blogs>div{
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.blogs .bCTa{
+  /* background-color: yellow; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* align-items:first baseline; */
+}
+
+ .bCTa .heading {
+    font-family: Caveat, cursive;
+    position: relative;
+    display: inline-block;
+    color: var(--base);
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .bCTa .heading::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 90px;   /* line length */
+    height: 1px;   /* line thickness */
+    background: var(--base);
+    right:70%; 
+  }
+
+  .bCTa h1{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    text-align: center;
+    width: 100%;
+  }
+
+.blogs .blogs{
+  background-color: lime;
+  flex: 2;
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+  .clickMore {
+    position: relative;
+    display: inline-block; /* keeps the buttons stacked */
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+
+ .clickMore .circle-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 180px;
+    background-color: #c9f31d;
+    border-radius: 50%;
+    color: #000; /* sets text color */
+    gap: 8px;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+  }
+
+
+ .clickMore .circle-btn svg {
+    fill: #000; /* arrow icon is black */
+  }
+
+  .clickMore .circle-btn span {
+    color: inherit; /* inherits black */
+  }
+
+   .clickMore .back {
+    position: absolute;       /* important to position it behind */
+    top: 8px;                 /* slight offset for depth */
+    left: -9px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #c9f31d;
+    z-index: 1;               /* behind the main button */
+    transition: all 0.3s ease;
+
+  }
+
+  /* Hover effect on main button */
+ .clickMore .circle-btn:hover + .back {
+    transform: translateY(-18px); /* move back upwards */
+  }
+
+    .blog {
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(56, 56, 56);
+  }
+
+
+  .blog:hover{
+    border-bottom: 1px solid rgb(201, 243, 29);
+  }
+
+  .blog:hover h2{
+    color: var(--base);
+  }
+
+  .blog:hover .icon-btn {
+    background-color: var(--base);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  }
+
+  .icon-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .icon-btn svg {
+  width: 24px;
+  height: 24px;
+  transition: fill 0.3s ease;
+}
+
+.icon-btn:hover svg {
+  fill: #000; /* ensures SVG color changes with text color */
+}
+
+  .firstService{
+    border-top: 1px solid rgb(56, 56, 56);
+
+    border-bottom: 1px solid rgb(56, 56, 56);
+
+  }
+
+  .firstService:hover{
+    border-top: 1px solid rgb(201, 243, 29);
+
+    border-bottom: 1px solid rgb(201, 243, 29);
+  }
+
+  .blog p{
+   flex: 1;
+    font-size: 16px;
+    color:rgb(153, 153, 153);
+    font-weight: 400;
+
+  }
+  .blog>div{
+    display: flex;
+    gap: 40px;
+  }
+
+  .blog p,
+  .blog > div {
+    flex: 1;
+    min-width: 300px;
+  }
+
+
+  .blogName {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .blogName h5{
+      font-size: 20px;
+    font-weight: 600;
+  }
+
+  .blogName h2{
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+
+  .icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #1f1f1f; /* Button background */
+    color: #fff; /* Icon color */
+    border: none;
+    border-radius: 10px; /* Makes it circular */
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
