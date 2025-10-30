@@ -200,10 +200,14 @@
     left: calc(5% - 60%);
     bottom: 80px;
   max-width: 400px;
+
   }
 
   .image img {
     max-width: 500px;
+   mix-blend-mode: lighten; /* or multiply, screen, etc. */
+
+
   }
 
   .leftBanner {
@@ -563,11 +567,17 @@
   .award:hover{
     border-bottom: 1px solid rgb(126, 123, 123);
   }
+  .award span{
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+   
+  }
 
   .award h3{
     color: rgb(255, 255, 255);
     font-weight: 500;
-    size: 20px;
+    font-size: 20px;
   }
 
   .projects{
@@ -1475,14 +1485,6 @@ li::marker {
     width: 100%;
   }
 
-.blogs .blogs{
-  background-color: lime;
-  flex: 2;
-  display: flex;
-  gap: 30px;
-  overflow-x: auto;
-  padding-bottom: 10px;
-}
 
   .clickMore {
     position: relative;
@@ -1536,19 +1538,33 @@ li::marker {
     transform: translateY(-18px); /* move back upwards */
   }
 
-    .blog {
+  .blogs .blog_s{
+  /* background-color: lime; */
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+
+
+  .blog {
     width: 100%;  
     display: flex;
     align-items: center;
-    gap: 130px;
+    min-width: 300px;
+    gap: 2rem;
     padding: 40px 0;
-    flex-wrap: wrap;
     border-bottom: 1px solid rgb(56, 56, 56);
-  }
 
+  }
 
   .blog:hover{
     border-bottom: 1px solid rgb(201, 243, 29);
+  }
+
+  .blog:hover .blogImage{
+    opacity: 1;
   }
 
   .blog:hover h2{
@@ -1560,73 +1576,71 @@ li::marker {
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.3);
   }
-
-  .icon-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  }
-
-  .icon-btn svg {
-  width: 24px;
-  height: 24px;
-  transition: fill 0.3s ease;
-}
-
-.icon-btn:hover svg {
-  fill: #000; /* ensures SVG color changes with text color */
-}
-
-  .firstService{
+  .firstBlog{
     border-top: 1px solid rgb(56, 56, 56);
 
     border-bottom: 1px solid rgb(56, 56, 56);
 
   }
 
-  .firstService:hover{
+  .firstBlog:hover{
     border-top: 1px solid rgb(201, 243, 29);
 
     border-bottom: 1px solid rgb(201, 243, 29);
   }
 
-  .blog p{
-   flex: 1;
-    font-size: 16px;
-    color:rgb(153, 153, 153);
-    font-weight: 400;
-
-  }
-  .blog>div{
-    display: flex;
-    gap: 40px;
-  }
-
-  .blog p,
-  .blog > div {
-    flex: 1;
-    min-width: 300px;
-  }
-
 
   .blogName {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 2.5rem;
+    max-width: 340px;
   }
 
   .blogName h5{
-      font-size: 20px;
-    font-weight: 600;
+    font-size: 17px;
+    color: rgb(156, 155, 155);
+    font-weight: 400;
+    border: 1px solid rgb(75, 72, 72);
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 30px;
+
   }
 
   .blogName h2{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
   }
+  
+/* image section */
+.blogImage {
+  max-width: 300px;
+  overflow: hidden;
+  opacity: 0;
+    border-radius: 12px;
+    transition: opacity 500ms ease-in;
+      flex-shrink: 0; /* prevents image from shrinking */
 
 
-  .icon-btn {
+}
+
+.blogImage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* simple hover effect */
+.blogImage:hover img {
+  transform: scale(1.05);
+}
+ 
+   .icon-btn {
     display: inline-flex;
+    /* flex: 1; */
     align-items: center;
     justify-content: center;
     width: 60px;
@@ -1640,3 +1654,128 @@ li::marker {
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
+
+  .icon-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  }
+
+  .icon-btn svg {
+  width: 24px;
+  transition: fill 0.3s ease;
+}
+
+.icon-btn:hover svg {
+  fill: #000; /* ensures SVG color changes with text color */
+}
+
+.getInTouch{
+  width: 100%;
+    background-color: #141410;
+}
+
+.childDiv{
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+}
+
+.childDiv h1{
+    font-size: 165px;
+    width: 100%;
+    font-weight: 500;
+    /* background-color: yellow; */
+    white-space: nowrap;
+    padding: 80px 0;
+    overflow: hidden;
+    border: 1px solid rgb(75, 72, 72);
+    /* width: fit-content; */
+    border-radius: 10px;
+}
+
+.childDiv .handles{
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  gap: 30px
+}
+
+.childDiv .handles .mail, .Glinks{
+  flex: 1;
+  /* background-color: yellow; */
+  padding: 40px 0;
+}
+
+.mail{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+.mail p{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 36px;
+}
+
+
+.mail a {
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 36px;
+    font-family: Kanit, sans-serif;
+    transition: all .3s;
+}
+
+.Glinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px; /* spacing between items */
+}
+
+.Glink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 16px;
+  background-color: #1a1a1a; /* dark background */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Glink a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.Glink svg {
+  width: 20px;
+  fill: #ffffff;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+/* Hover Effects */
+.Glink:hover {
+  background-color: var(--base); /* change background on hover */
+}
+
+.Glink:hover a {
+  color: #000; /* text color change */
+}
+
+.Glink:hover svg {
+  fill: #000; /* icon color change */
+  transform: scale(1.2); /* slight zoom effect */
+}
