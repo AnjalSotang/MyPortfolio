@@ -41,3 +41,12 @@ setInterval(() => {
   }  
   showTestimonial(currentIndex, buttonIndex);
 }, 2000);
+
+const sbutton = document.querySelector(".hamburger")
+console.log(sbutton)
+const aside = document.querySelector("aside")
+
+sbutton.addEventListener("click", () => {
+  console.log("hehe")
+    aside.style.opacity = "1";
+  });
