@@ -42,11 +42,16 @@ setInterval(() => {
   showTestimonial(currentIndex, buttonIndex);
 }, 2000);
 
-const sbutton = document.querySelector(".hamburger")
-console.log(sbutton)
-const aside = document.querySelector("aside")
+const sbutton = document.querySelector(".hamburger");
+const aside = document.querySelector("aside");
 
 sbutton.addEventListener("click", () => {
-  console.log("hehe")
-    aside.style.opacity = "1";
-  });
+  aside.classList.toggle("active");
+});
+
+
+const closeBtn = aside.querySelector("button");
+
+closeBtn.addEventListener("click", () => {
+  aside.classList.remove("active");
+});
