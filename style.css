@@ -734,7 +734,8 @@ aside svg {
     justify-content: center;
     gap: 20px;
     border-radius: 10px; /* optional, nicer look */
-    font-size: 20px;
+       font-size: 16px;
+
     padding: 10px 30px;
     width: 200px; /* stops the card from expanding too much */
     height: 150px;
@@ -747,9 +748,15 @@ aside svg {
   .card1 .span1 {
     color: rgb(153, 153, 153);
   }
+
+  .spn1{
+    /* width: 80%; */
+    font-size: 16px;
+    /* background-color: red; */
+  }
   .card1 .span2 {
     color: (255, 255, 255);
-    font-size: 17px;
+    font-size: 15px;
     line-height: 24PX;
   }
 
