@@ -131,6 +131,9 @@
   
  /* Responsive styling */
 @media screen and (max-width: 1024px) {
+  #scrl1{
+    display: none;
+  }
   .nav-links {
     gap: 20px;
   }
