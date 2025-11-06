@@ -7,9 +7,14 @@
     color: white;
   }
 
+  html, body {
+  overflow-x: hidden;
+}
+
+
   body {
-    background-color: black;
-      overflow-x: hidden;
+     background-color: red;
+      /* overflow-x: hidden; */
   }
 
   header {
@@ -116,6 +121,68 @@
   .links .hamburger span {
     color: black;
   }
+
+
+
+/* Hamburger toggle functionality */
+.nav-links.active {
+  display: flex;
+}
+  
+ /* Responsive styling */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .logo h2 {
+    font-size: 1.8rem;
+  }
+
+  .links > div {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  
+.logo {
+    border-right: none;
+}
+  nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.95);
+    gap: 0;
+    display: none; /* hidden initially */
+    border-bottom: 2px solid rgb(38, 37, 37);
+  }
+
+  .nav-links a {
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgb(38, 37, 37);
+  }
+
+  .links .hamburger {
+    display: flex; /* show hamburger on mobile */
+  }
+
+    .links {
+    border-left:none;
+  }
+
+}
 
 
   main {
@@ -245,7 +312,6 @@ aside svg {
 
 
   .main {
-    
     height: 100vh;
     width: 100vw;
     position: relative;
@@ -258,8 +324,10 @@ aside svg {
   }
 
   .hero {
+    /* width: 100%; */
     height: 100%;
     display: flex;
+    position: relative;
   }
 
 
@@ -280,7 +348,6 @@ aside svg {
 .hero-title {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   width: 100%; /* both take same width inside parent */
   box-sizing: border-box;
 }
@@ -319,7 +386,9 @@ aside svg {
   font-weight: 700;
   line-height: 1.1;
   color: #fff;
-    margin: 0; /* important: remove default h1 margin */
+  margin: 0; /* important: remove default h1 margin */
+  padding-left: 90px;
+
 
 }
 
@@ -352,7 +421,7 @@ aside svg {
     cursor: pointer;
     color: #000;
     width: 120px;
-    margin-left: 90px;
+    margin-left: 100px;
     transition: all 0.3s ease; /* smooth hover */
     text-decoration: none;
 }
@@ -458,6 +527,19 @@ aside svg {
   .rightBanner .bottomRight a {
     transform: rotate(-90deg);
   }
+/* ============================= */
+/* 🌐 Responsive Media Queries   */
+/* ============================= */
+
+/* Large Tablets / Small Laptops (≤1200px) */
+@media screen and (max-width: 1200px) {
+
+  .main{
+    display: none;
+  }
+
+}
+
 
 .scroller {
   background: rgb(201, 243, 29);
@@ -513,6 +595,7 @@ aside svg {
       transform: translateX(-90%); /* shift exactly half the width */
     }
   }
+
 
   .about {
     /* min-height: 100vh; Let it expand naturally */
@@ -649,12 +732,12 @@ aside svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     border-radius: 10px; /* optional, nicer look */
     font-size: 20px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     width: 200px; /* stops the card from expanding too much */
-    height: 120px;
+    height: 150px;
     transition-duration: 200ms;
   transition-property: all;}
 
@@ -667,7 +750,10 @@ aside svg {
   .card1 .span2 {
     color: (255, 255, 255);
     font-size: 17px;
+    line-height: 24PX;
   }
+
+
 
 
   .experienceCard {
@@ -685,6 +771,7 @@ aside svg {
     border-top: 2px solid rgb(31, 30, 30);
     padding: 15px 0;
   }
+
 
   .experienceCard .card:hover{
     border-top:1px solid rgb(201, 243, 29);
@@ -952,6 +1039,181 @@ aside svg {
   }
 
 
+  /* ✅ Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .projects > div {
+    max-width: 90%;
+    padding: 80px 0;
+    gap: 20px;
+  }
+
+  .projects > div .info {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .gallary {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .left, .right {
+    gap: 40px;
+  }
+
+  .imge {
+    max-width: 100%;
+  }
+
+  .img1 {
+    height: 400px;
+  }
+
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .details a {
+    align-self: flex-start;
+    font-size: 14px;
+  }
+
+  .circle-btn, .back {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+/* ✅ Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .projects > div {
+    max-width: 95%;
+    padding: 60px 0;
+  }
+
+  .projects > div .heading {
+    font-size: 20px;
+  }
+
+  .projects > div .heading::before,
+  .projects > div .heading::after {
+    width: 40px;
+  }
+
+  .projects > div .info {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .gallary {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .pics {
+    gap: 15px;
+  }
+
+  .imge {
+    width: 100%;
+    height: auto;
+  }
+
+  .img1 {
+    height: 300px;
+  }
+
+  .imge img {
+    object-fit: cover;
+  }
+
+  .details {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+
+  .details > div h3 {
+    font-size: 14px;
+  }
+
+  .details > div h2 {
+    font-size: 18px;
+  }
+
+  .details a {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+
+  .circle-btn, .back {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle-btn span {
+    font-size: 12px;
+  }
+}
+
+
+/* ✅ Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .projects > div {
+    padding: 40px 0;
+    gap: 20px;
+  }
+
+  .projects > div .info {
+    font-size: 22px;
+    line-height: 30px;
+    padding: 0 10px;
+  }
+
+  .gallary {
+    gap: 20px;
+  }
+
+  .imge {
+    border-radius: 8px;
+  }
+
+  .img1 {
+    height: 220px;
+  }
+
+  .details > div h2 {
+    font-size: 16px;
+  }
+
+  .details > div h3 {
+    font-size: 13px;
+  }
+
+  .details a {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .circle-btn, .back {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .circle-btn span {
+    font-size: 10px;
+  }
+}
+
+
   .connect{
   width: 100%;
   background-color: #161616;
@@ -1064,174 +1326,253 @@ aside svg {
     font-size: 20px;
   }
 
-  .services{
-    width: 100%;
-    background-color: #141410;
-  }
-
-  .services>div{
-    max-width: 80%;
-    margin: 0 auto;
-    display: flex;
+  /* ✅ Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .connect > div {
+    max-width: 90%;
     flex-direction: column;
-    gap: 30px;
     align-items: center;
-    padding: 90px 0;  
-  }
-
-  .services .heading {
-    font-family: Caveat, cursive;
-    position: relative;
-    display: inline-block;
-    color: var(--base);
-    font-size: 24px;
-  }
-
-  .services .heading::before,
-  .services .heading::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 80px;   /* line length */
-    height: 1px;   /* line thickness */
-    background: var(--base);
-  }
-
-  .services .heading::before {
-    right:100%;   /* push before element to the left *?
-    /* margin-right: 1px; spacing between line & text */
-  }
-
-  .services .heading::after {
-    left: 103%;    /* push after element to the right */
-    /* margin-left: 15px; spacing between line & text */
-  }
-
-  h1{
-    font-size: 60px;
-    text-align: center;
-    width: 70%;
-    font-weight: 500;
-    line-height: 72px;
-  }
-
-  .serviceList{
-    width: 100%;
-     display: flex;
-    flex-direction: column;
-  }
-
-
-  .service {
-    width: 100%;  
-    display: flex;
-    align-items: center;
-    gap: 130px;
-    padding: 40px 0;
-    flex-wrap: wrap;
-    border-bottom: 1px solid rgb(56, 56, 56);
-  }
-
-
-  .service:hover{
-    border-bottom: 1px solid rgb(201, 243, 29);
-  }
-
-  .service:hover h2{
-    color: var(--base);
-  }
-
-  .service:hover .icon-btn {
-    background-color: var(--base);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-  }
-
-  .icon-btn:active {
-    transform: translateY(0);
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  }
-
-  .icon-btn svg {
-  width: 24px;
-  height: 24px;
-  transition: fill 0.3s ease;
-}
-
-.icon-btn:hover svg {
-  fill: #000; /* ensures SVG color changes with text color */
-}
-
-  .firstService{
-    border-top: 1px solid rgb(56, 56, 56);
-
-    border-bottom: 1px solid rgb(56, 56, 56);
-
-  }
-
-  .firstService:hover{
-    border-top: 1px solid rgb(201, 243, 29);
-
-    border-bottom: 1px solid rgb(201, 243, 29);
-  }
-
-  .service p{
-   flex: 1;
-    font-size: 16px;
-    color:rgb(153, 153, 153);
-    font-weight: 400;
-
-  }
-  .service>div{
-    display: flex;
     gap: 40px;
+    padding: 70px 0;
   }
 
-  .service p,
-  .service > div {
-    flex: 1;
-    min-width: 300px;
-  }
-
-
-  .service> div span{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    font-weight: 500;
-  }
-
-  .serviceName {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .serviceName h5{
-      font-size: 20px;
-    font-weight: 600;
-  }
-
-  .serviceName h2{
-    font-size: 40px;
-    font-weight: 600;
-  }
-
-
-  .icon-btn {
-    display: inline-flex;
+  .information {
+    width: 100%;
     align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    background-color: #1f1f1f; /* Button background */
-    color: #fff; /* Icon color */
-    border: none;
-    border-radius: 10px; /* Makes it circular */
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   }
+
+  .information .intro {
+    align-items: center;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .information .intro .heading {
+    font-size: 22px;
+    padding-left: 0;
+  }
+
+  .information .intro .heading::before {
+    display: none;
+  }
+
+  .slogan {
+    font-size: 42px;
+    line-height: 54px;
+  }
+
+  .contactData {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .sticker {
+    width: 80%;
+  }
+
+  .sticker img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* ✅ Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .connect > div {
+    padding: 50px 0;
+    gap: 30px;
+  }
+
+  .information {
+    width: 100%;
+    text-align: center;
+  }
+
+  .information .intro {
+    gap: 15px;
+  }
+
+  .slogan {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 10px;
+  }
+
+  .contactData {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-bottom: none;
+  }
+
+  .contactData svg {
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+  }
+
+  .contactData .data .label {
+    font-size: 16px;
+  }
+
+  .contactData .data .value {
+    font-size: 18px;
+  }
+
+  .sticker {
+    width: 90%;
+  }
+
+  .sticker img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/* ✅ Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .connect > div {
+    padding: 40px 0;
+    gap: 20px;
+  }
+
+  .slogan {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .contactData svg {
+    width: 20px;
+    height: 20px;
+    padding: 6px;
+  }
+
+  .contactData .data .label {
+    font-size: 14px;
+  }
+
+  .contactData .data .value {
+    font-size: 16px;
+  }
+
+  .sticker {
+    width: 100%;
+  }
+
+  .sticker img {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+
+.services {
+  width: 100%;
+  background-color: #141410;
+}
+
+.services > div {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 90px 0;
+}
+
+.services .heading {
+  font-family: Caveat, cursive;
+  position: relative;
+  display: inline-block;
+  color: var(--base);
+  font-size: 24px;
+}
+
+.services .heading::before, .services .heading::after { content: ""; position: absolute; top: 50%; width: 80px; /* line length */ height: 1px; /* line thickness */ background: var(--base); } .services .heading::before { right:100%; /* push before element to the left *? /* margin-right: 1px; spacing between line & text */ } .services .heading::after { left: 103%; /* push after element to the right */ /* margin-left: 15px; spacing between line & text */ }
+
+.services h1 {
+  font-size: 24px;
+  text-align: center;
+  width: 70%;
+  font-weight: 400;
+  line-height: 32px;
+  color: #ddd;
+}
+
+/* Grid Layout */
+.servicesList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+  justify-items: center;
+}
+
+/* Skill Card */
+.skillCard {
+  background-color: #1d1d1d;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  max-width: 220px;
+}
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  background-color: #222;
+}
+
+.skillCard svg {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.skillCard .nxt, .skillCard .exp{
+  filter: invert(1);
+}
+
+
+
+.skillCard p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services h1 {
+    width: 90%;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .skillCard {
+    padding: 25px 15px;
+  }
+
+  .skillCard img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .skillCard p {
+    font-size: 16px;
+  }
+}
+
 
 .workFlow{
   width: 100%;
@@ -1284,13 +1625,15 @@ aside svg {
     width: 70%;
     font-weight: 500;
     line-height: 72px;
+    margin-bottom: 40px;
+
   }
 
 .flow{
     display: flex;
     gap: 40px;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
    
   }
 
@@ -1369,6 +1712,126 @@ li::marker {
   color: var(--base);
   font-size: 1.5rem;
 }
+
+/* ✅ Tablet (up to 1024px) */
+@media (max-width: 1024px) {
+  .workFlow > div {
+    max-width: 80%;
+    padding: 80px 0;
+  }
+
+  .workFlow h1 {
+    font-size: 42px;
+    line-height: 56px;
+    width: 90%;
+  }
+
+  .flow {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .step {
+    padding: 20px;
+  }
+
+  .step h2 {
+    font-size: 28px;
+  }
+
+  .step p,
+  .step ul li {
+    font-size: 15px;
+  }
+}
+
+
+/* ✅ Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .workFlow > div {
+    max-width: 80%;
+    padding: 60px 0;
+    gap: 20px;
+  }
+
+  .workFlow .heading {
+    font-size: 20px;
+  }
+
+  .workFlow h1 {
+    font-size: 32px;
+    width: 100%;
+    line-height: 44px;
+  }
+
+  .flow {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .step {
+    width: 90%;
+    align-items: flex-start;
+    padding: 25px 20px;
+  }
+
+  .step h2 {
+    font-size: 26px;
+  }
+
+  .step p {
+    font-size: 15px;
+  }
+
+  .step ul {
+    padding-left: 25px;
+  }
+
+  .clip {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+/* ✅ Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .workFlow > div {
+    padding: 40px 0;
+  }
+
+  .workFlow .heading {
+    font-size: 18px;
+  }
+
+  .workFlow h1 {
+    font-size: 26px;
+    width: 100%;
+    line-height: 36px;
+  }
+
+  .step {
+    width: 100%;
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .step h2 {
+    font-size: 22px;
+  }
+
+  .step p,
+  .step ul li {
+    font-size: 14px;
+  }
+
+  .clip {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 
 .testmonials{
   width: 100%;
@@ -1624,6 +2087,139 @@ li::marker {
   filter: grayscale(0%);
   opacity: 1;
   transform: scale(1.05);
+}
+
+
+/* ✅ Responsive Design for Testimonials Section */
+@media (max-width: 1200px) {
+  .testmonials > div {
+    max-width: 80%;
+  }
+
+  .testmonials h1 {
+    font-size: 48px;
+    line-height: 58px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .testimonial {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    padding: 40px 0;
+  }
+
+  .tests {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .tstImg{
+    display: none;
+  }
+  .tests2 {
+    order: -1;
+    flex: unset;
+    width: 100%;
+  }
+
+  .tests2 img {
+    position: static;
+    transform: none;
+    width: 80px;
+    margin-bottom: 20px;
+  }
+
+  .tests2 .pag {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .testmonials h1 {
+    font-size: 40px;
+    width: 90%;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testmonials > div {
+    padding: 80px 0;
+  }
+
+  .testmonials h1 {
+    font-size: 32px;
+    width: 100%;
+    line-height: 44px;
+  }
+
+  .testimonial {
+    gap: 20px;
+  }
+
+  .tests img {
+    width: 100px;
+  }
+
+  .tests2 img {
+    width: 70px;
+  }
+
+  .tests2 .pag button {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .testmonials > div {
+    padding: 60px 0;
+  }
+
+  .testmonials .heading {
+    font-size: 20px;
+  }
+
+  .testmonials h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .testimonial {
+    padding: 20px 0;
+  }
+
+  .tests {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tests img {
+    width: 80px;
+  }
+
+  .tests2 p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tests2 .customers h3 {
+    font-size: 16px;
+  }
+
+  .tests2 .customers h5 {
+    font-size: 13px;
+  }
+
+  .tests2 .pag button {
+    width: 12px;
+    height: 12px;
+  }
 }
 
 .blogs{
@@ -1884,7 +2480,7 @@ li::marker {
     font-weight: 500;
     /* background-color: yellow; */
     white-space: nowrap;
-    padding: 80px 0;
+    padding: 80px;
     overflow: hidden;
     border: 1px solid rgb(75, 72, 72);
     /* width: fit-content; */
@@ -1912,7 +2508,8 @@ li::marker {
 
 
 .mail p{
-    font-size: 24px;
+    font-size: 20px;
+    width: 95%;
     font-weight: 400;
     color: rgb(255, 255, 255);
     line-height: 36px;
@@ -1940,6 +2537,7 @@ li::marker {
   gap: 10px;
   padding: 12px 16px;
   background-color: #1a1a1a; /* dark background */
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -1973,31 +2571,188 @@ li::marker {
   transform: scale(1.2); /* slight zoom effect */
 }
 
-footer{
-  width: 100vw;
-  /* gap: 100px; */
-  /* background-color: #1A1A1A; */
-    background-color: #141410;
+/* =============================== */
+/* 📱 RESPONSIVE DESIGN SYSTEM */
+/* =============================== */
 
+/* 🧩 Large screens to medium laptops (≤ 1400px) */
+@media screen and (max-width: 1400px) {
+  .childDiv h1 {
+    font-size: 100px;
+    padding: 60px 0;
+  }
 
+  .mail p {
+    font-size: 22px;
+  }
+
+  .mail a {
+    font-size: 30px;
+  }
 }
 
-footer .ChildFooter{
+/* 💻 Tablets & small laptops (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  .childDiv {
+    max-width: 80%;
+    padding: 100px 0;
+  }
+
+  .childDiv h1 {
+    font-size: 80px;
+    padding: 50px 0;
+  }
+
+  .childDiv .handles {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .mail {
+    align-items: flex-start;
+  }
+
+  .mail p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .mail a {
+    font-size: 28px;
+  }
+
+  .Glinks {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* 📲 Tablets (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .childDiv h1 {
+    font-size: 50px;
+    padding: 40px 0;
+  }
+
+  .mail p {
+    font-size: 18px;
+  }
+
+  .mail a {
+    font-size: 24px;
+  }
+
+  .Glink {
+    padding: 10px 14px;
+  }
+
+  .Glink a {
+    font-size: 18px;
+  }
+
+  .Glink svg {
+    width: 18px;
+  }
+}
+
+/* 📱 Mobile (≤ 576px) */
+@media screen and (max-width: 576px) {
+  .childDiv {
+    gap: 40px;
+    padding: 80px 0;
+  }
+
+  .childDiv h1 {
+    font-size: 50px;
+    padding: 30px 0;
+    white-space: normal; /* allow wrapping */
+    text-align: center;
+  }
+
+  .mail {
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mail p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .mail a {
+    font-size: 22px;
+  }
+
+  .Glinks {
+    grid-template-columns: 1fr; /* stack vertically */
+    width: 100%;
+  }
+
+  .Glink {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .Glink a {
+    font-size: 18px;
+  }
+}
+
+/* 📞 Small mobile (≤ 400px) */
+@media screen and (max-width: 400px) {
+  .childDiv h1 {
+    font-size: 38px;
+    padding: 24px 0;
+  }
+
+  .mail a {
+    font-size: 20px;
+  }
+
+  .Glink a {
+    font-size: 16px;
+  }
+
+  .Glink svg {
+    width: 16px;
+  }
+}
+
+
+/* =============================== */
+/* 🌙 FOOTER BASE STYLES */
+/* =============================== */
+
+footer {
+  width: 100vw;
+  background-color: #141410;
+}
+
+footer .ChildFooter {
   max-width: 80%;
   margin: 0 auto;
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* ensures items don't overflow on smaller screens */
 }
 
-footer .ChildFooter p{
-  font-weight:500;
+footer .ChildFooter p {
+  font-weight: 500;
+  color: #eaeaea;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
 }
-footer .ChildFooter span{
+
+footer .ChildFooter span {
   color: var(--base);
 }
 
+/* ⬆️ Scroll-to-top button */
 .styled-link {
   display: inline-flex;
   align-items: center;
@@ -2008,6 +2763,7 @@ footer .ChildFooter span{
   border-radius: 10px;
   transition: all 0.3s ease;
   text-decoration: none;
+  flex-shrink: 0; /* prevent it from shrinking on wrap */
 }
 
 .styled-link svg {
@@ -2017,7 +2773,231 @@ footer .ChildFooter span{
 }
 
 .styled-link:hover {
-  color: var(--base);
   border-color: var(--base);
   transform: translateY(-2px);
+}
+
+/* =============================== */
+/* 📱 RESPONSIVE DESIGN */
+/* =============================== */
+
+/* Laptop & tablets (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+  footer .ChildFooter {
+    max-width: 90%;
+    padding: 32px 0;
+  }
+
+  footer .ChildFooter p {
+    font-size: 15px;
+  }
+
+  .styled-link {
+    padding: 10px;
+  }
+}
+
+/* Tablets (≤ 768px) */
+@media screen and (max-width: 768px) {
+  footer .ChildFooter {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+
+  footer .ChildFooter p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .styled-link svg {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* Mobile (≤ 576px) */
+@media screen and (max-width: 576px) {
+  footer .ChildFooter {
+    padding: 24px 0;
+    gap: 0.8rem;
+  }
+
+  footer .ChildFooter p {
+    font-size: 13px;
+  }
+
+  .styled-link {
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .styled-link svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Small Mobile (≤ 400px) */
+@media screen and (max-width: 400px) {
+  footer .ChildFooter p {
+    font-size: 12px;
+  }
+
+  .styled-link svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+
+
+ 
+
+
+
+
+/* ✅ Tablet (up to 1024px) */
+@media (max-width: 1024px) {
+  .intro p {
+    font-size: 28px;
+  }
+
+  .intro button {
+    padding: 15px 25px;
+    font-size: 14px;
+  }
+
+  .infos {
+    flex-direction: column;
+    max-height: none;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+
+  .infos .infoImg {
+    width: 70%;
+    padding-left: 0;
+  }
+
+  .infos .infoContent {
+    width: 90%;
+    padding: 40px 20px;
+  }
+
+  .infoCard {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+  }
+}
+
+
+/* ✅ Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .intro {
+    width: 95%;
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .intro .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .intro button {
+    padding: 12px 20px;
+    font-size: 13px;
+  }
+
+  .infos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infos .infoImg {
+    width: 85%;
+  }
+
+  .infos .infoContent {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .infoContent h2 {
+    font-size: 30px;
+  }
+
+  .infoContent p {
+    font-size: 16px;
+  }
+
+  .infoCard {
+    grid-template-columns: 1fr;
+  }
+
+  .card1 {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .experienceCard {
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .experienceCard .card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .experienceCard .card .position {
+    gap: 5px;
+  }
+}
+
+
+/* ✅ Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .intro p {
+    font-size: 18px;
+  }
+
+  .intro button {
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .infoContent h2 {
+    font-size: 26px;
+  }
+
+  .infoContent p {
+    font-size: 14px;
+  }
+
+  .infoImg img {
+    max-width: 100%;
+  }
+
+  .card1 {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .experienceCard .card span {
+    font-size: 16px;
+  }
+
+  .experienceCard .card .position h3 {
+    font-size: 18px;
+  }
 }
