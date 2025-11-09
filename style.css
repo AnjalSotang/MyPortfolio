@@ -622,11 +622,42 @@ aside svg {
     padding: 20px 0;
   }
 
-  .intro img {
-    max-width: 50px;
-    width: 100%;
-    height: auto;
-  }
+/* Initial hidden state */
+.autoShow {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s ease-out;
+}
+
+/* Class to trigger animation */
+.autoShow.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Initial hidden state */
+.autoShowUp {
+  opacity: 0;
+  transform: translateY(-100px);
+  transition: all 1s ease-out;
+}
+
+/* Class to trigger animation */
+.autoShowUp.showUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+ /* Image sizing inside .intro */
+.intro img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+  display: block; /* ensures proper layout */
+}
+
 
   .intro p {
     text-align: center;
@@ -683,6 +714,20 @@ aside svg {
     border-radius: 10px; /* optional: rounded corners */
     object-fit: cover; /* ensures image covers the area if you set a fixed height */
   }
+
+/* Initial hidden state */
+.autoPop {
+  opacity: 0;
+  transform: scale(0); /* start small */
+  transition: all 2s ease-out; /* shorter duration for pop feel */
+}
+
+/* Class to trigger animation */
+.autoPop.pop {
+  opacity: 1;
+  transform: scale(1); /* full size */
+}
+
 
   .infos .infoContent {
     width: 50%;
@@ -2872,6 +2917,8 @@ footer .ChildFooter span {
   .about{
     margin-top: 70px;
   }
+
+
 .intro {
   background-image: url("assets/anjrai.png");
   background-repeat: no-repeat;
@@ -3030,3 +3077,4 @@ footer .ChildFooter span {
     font-size: 18px;
   }
 }
+

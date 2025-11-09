@@ -55,3 +55,41 @@ const closeBtn = aside.querySelector("button");
 closeBtn.addEventListener("click", () => {
   aside.classList.remove("active");
 });
+
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show'); // remove when out of view
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.autoShow').forEach(el => observer.observe(el));
+
+const observerUp = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showUp');
+    } else {
+      entry.target.classList.remove('showUp'); // remove when out of view
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.autoShowUp').forEach(el => observerUp.observe(el));
+
+
+const pobserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('pop');
+    } else {
+      entry.target.classList.remove('pop'); // allows repeated pop
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.autoPop').forEach(el => pobserver.observe(el));
