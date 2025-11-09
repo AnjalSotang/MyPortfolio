@@ -13,7 +13,7 @@
 
 
   body {
-     background-color: red;
+     background-color: #000;
       /* overflow-x: hidden; */
   }
 
@@ -80,7 +80,7 @@
     border-left: 2px solid rgb(38, 37, 37);
   }
 
-  .links > div {
+  .links a {
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -91,13 +91,10 @@
     border-radius: 4px;
     gap: 8px;
     cursor: pointer;
+    text-decoration: none;
   }
 
-  .links > div a {
-    text-decoration: none;
-    color: black;
-  }
-  .links > div span {
+  .links a span {
     color: black;
   }
 
@@ -669,10 +666,15 @@ aside svg {
     align-items: center;
   }
 
-  .infos .infoImg {
-    width: 40%;
-    padding-left: 50px;
-  }
+ .infoImg {
+  background: url("assets/abt.png") no-repeat center center/cover;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+  
 
   .infoImg img {
     max-width: 95%;
@@ -2549,17 +2551,12 @@ li::marker {
   background-color: #1a1a1a; /* dark background */
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.Glink a {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 500;
-  font-size: 20px;
-  transition: color 0.3s ease;
-}
+
 
 .Glink svg {
   width: 20px;
@@ -2861,23 +2858,43 @@ footer .ChildFooter span {
   }
 }
 
-
-
- 
-
+@media (max-width: 1024px) {
+  .infoImg {
+    display: none;
+  }
+}
 
 
 
 /* ✅ Tablet (up to 1024px) */
 @media (max-width: 1024px) {
-  .intro p {
-    font-size: 28px;
-  }
 
-  .intro button {
-    padding: 15px 25px;
-    font-size: 14px;
+  .about{
+    margin-top: 70px;
   }
+.intro {
+  background-image: url("assets/anjrai.png");
+  background-repeat: no-repeat;
+  background-position: top center; /* image starts at the top */
+  background-size: 180px auto; /* scale width, maintain aspect ratio */
+  
+  padding-top: 350px; /* push text below the image */
+  width: 90%;
+  margin: 20 auto;
+  text-align: center;
+}
+/* .intro img{
+  dis
+} */
+.intro p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.intro .buttons {
+  margin-top: 1rem;
+}
+
 
   .infos {
     flex-direction: column;
@@ -2894,6 +2911,8 @@ footer .ChildFooter span {
   .infos .infoContent {
     width: 90%;
     padding: 40px 20px;
+    
+    
   }
 
   .infoCard {
