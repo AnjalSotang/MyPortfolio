@@ -1035,6 +1035,10 @@ aside svg {
     color: var(--base);
   }
 
+   .details > div h2 {
+    font-size: 15px;
+  }
+
   .details a {
     margin-right: 10px;
     text-decoration: none;
