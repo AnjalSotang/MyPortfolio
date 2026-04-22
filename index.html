@@ -22,8 +22,8 @@
         <a href="#about-section">About</a>
         <a href="#work">Work</a>
         <a href="#service">Services</a>
-        <a href="#test">Testimonail</a>
-        <!-- <a href="">Blog</a> -->
+        <a href="#experience">Experience</a>
+        <a href="blog.html">Blog</a>
         <!-- <a href="">Contact</a> -->
       </div>
       <div class="links nav-box">
@@ -217,14 +217,14 @@
 
         <div class="buttons">
           <button class="active" data-target="personalInfo">ABOUT</button>
-          <button data-target="experienceInfo">EXPERIENCE</button>
+          <!-- <button data-target="experienceInfo">EXPERIENCE</button> -->
           <button data-target="educationInfo">EDUCATION</button>
           <button data-target="skillInfo">SKILLS</button>
         </div>
 
       </div>
       <div class="infos">
-        <div class="infoImg autoPop">
+        <div class="infoImg">
           <!-- <img src="assets/abt.png" alt="H"> -->
         </div>
 
@@ -289,7 +289,7 @@
           </div>
         </div>
 
-        <div class="infoContent" id="experienceInfo">
+        <!-- <div class="infoContent" id="experienceInfo">
           <h2>My Experience</h2>
           <p>
             Over the past few years, I’ve built a strong foundation in both IT support and backend development.
@@ -315,10 +315,16 @@
               </div>
             </div>
 
-
+             <div class="card" id="cardExt">
+              <span>In 2023</span>
+              <div class="position">
+                <h3>Node.js Intern</h3>
+                <p>Hunchha Digital</p>
+              </div>
+            </div>
 
           </div>
-        </div>
+        </div> -->
 
         <div class="infoContent" id="educationInfo">
           <h2>My Education</h2>
@@ -391,6 +397,89 @@
 
       </div>
 
+    </section>
+
+    <section id="experience" class="work-experience">
+      <div>
+        <h5 class="heading autoShowUp">Work Experience</h5>
+        <h1 class="autoShow">
+          My Professional
+          Journey
+        </h1>
+        
+        
+        <div class="experience-timeline autoShow">
+                    <!-- PortPro Pvt. Ltd. Experience -->
+          <div class="experience-item autoShow">
+            <div class="exp-header">
+              <div class="exp-company">
+                <div class="company-info">
+                  <img src="assets/portpro.png" alt="PortPro Pvt. Ltd." class="company-logo">
+                  <h3>PortPro Pvt. Ltd.</h3>
+                </div>
+              </div>
+              <div class="exp-period">
+                <span class="period">Nov 2025 - Apr 2026 (5 Months)</span>
+                <span class="position">Full Stack Developer Intern</span>
+              </div>
+            </div>
+            <div class="exp-description">
+              <ul>
+                <li>Implemented testing with Jest to safeguard business logic during PR merges; contributed to code reviews, debugging, and optimization using Git.</li>
+                <li>Designed RESTful APIs, performed data migrations, and created automation/web scraping scripts.</li>
+                <li>Collaborated in teams using Git, participating in code reviews and gaining experience in debugging and deployment workflows.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Hunccha Digital Experience -->
+          <div class="experience-item autoShow">
+            <div class="exp-header">
+              <div class="exp-company">
+                <div class="company-info">
+                  <img src="assets/hunchha.png" alt="Hunccha Digital" class="company-logo">
+                  <h3>Hunccha Digital</h3>
+                </div>
+              </div>
+              <div class="exp-period">
+                <span class="period">June 2023 - September 2023</span>
+                <span class="position">Node.js Backend Intern</span>
+              </div>
+            </div>
+            <div class="exp-description">
+              <ul>
+                <li>Developed backend features for a School Management System using Node.js, Express.js, Sequelize, and MySQL.</li>
+                <li>Implemented authentication, attendance, exam scheduling, and role-based access control.</li>
+                <li>Designed and optimized RESTful APIs for seamless front-end integration.</li>
+                <li>Improved database performance through efficient schema design and query optimization.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Itahari International College Experience -->
+          <div class="experience-item autoShow">
+            <div class="exp-header">
+              <div class="exp-company">
+                <div class="company-info">
+                  <img src="assets/IIC.png" alt="Itahari International College" class="company-logo">
+                  <h3>Itahari International College</h3>
+                </div>
+              </div>
+              <div class="exp-period">
+                <span class="period">February 2023 - August 2023</span>
+                <span class="position">IT Support Intern</span>
+              </div>
+            </div>
+            <div class="exp-description">
+              <ul>
+                <li>Provided technical support in networking and database management.</li>
+                <li>Assisted in system maintenance and troubleshooting IT issues.</li>
+                <li>Applied IT skills to real-world college operations and projects.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="scroller">
@@ -523,7 +612,7 @@
           </div>
 
         </div>
-        <div class="viewMore">
+        <!-- <div class="viewMore">
           <a href="#" class="circle-btn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" fill="currentColor">
               <path
@@ -535,7 +624,7 @@
           <a href="#" class="back">
           </a>
 
-        </div>
+        </div> -->
 
       </div>
 
@@ -574,7 +663,7 @@
           </div>
         </div>
         <div class="sticker">
-          <img class="autoPop" src="assets/connect.png" alt="">
+          <img src="assets/connect.png" alt="">
         </div>
       </div>
     </section>
@@ -624,6 +713,22 @@
                 d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z" />
             </svg>
             <p>JavaScript</p>
+          </div>
+          <div class="skillCard autoPop">
+            <img src="assets/adk.png" alt="Android Development Kit" style="width: 60px; height: 60px;">
+            <p>Agent Development Kit</p>
+          </div>
+          <div class="skillCard autoPop">
+            <img src="assets/plawright.png" alt="Playwright" style="width: 60px; height: 60px;">
+            <p>Playwright</p>
+          </div>
+          <div class="skillCard autoPop">
+            <img src="assets/puppetter.png" alt="Puppeteer" style="width: 60px; height: 60px;">
+            <p>Puppeteer</p>
+          </div>
+          <div class="skillCard autoPop">
+            <img src="assets/python.png" alt="Python" style="width: 60px; height: 60px;">
+            <p>Python</p>
           </div>
           <div class="skillCard autoPop">
             <svg class="exp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
@@ -838,174 +943,6 @@
     </section>
 
 
-    <section id="test" class="testmonials">
-      <div>
-        <h5 class="heading">Testimonial</h5>
-        <h1>
-          Happy Words From Happy
-          Customer
-        </h1>
-        <div class="testimonial">
-          <div class="tests tstImg">
-            <img src="https://matias-react-js.netlify.app/assets/man1-96b747a3.png" alt="">
-            <img src="https://matias-react-js.netlify.app/assets/man3-3627602a.png" alt="">
-          </div>
-
-          <div class="tests tests2">
-            <div class="testCon testActive">
-              <div class="ratings">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M320.1 417.6C330.1 417.6 340 419.9 349.1 424.6L423.5 462.5L410.5 380C407.3 359.8 414 339.3 428.4 324.8L487.4 265.7L404.9 252.6C384.7 249.4 367.2 236.7 357.9 218.5L319.9 144.1L319.9 417.7zM489.4 553C482.1 558.3 472.4 559.1 464.4 555L320.1 481.6L175.8 555C167.8 559.1 158.1 558.3 150.8 553C143.5 547.7 139.8 538.8 141.2 529.8L166.4 369.9L52 255.4C45.6 249 43.4 239.6 46.2 231C49 222.4 56.3 216.1 65.3 214.7L225.2 189.3L298.8 45.1C302.9 37.1 311.2 32 320.2 32C329.2 32 337.5 37.1 341.6 45.1L415 189.3L574.9 214.7C583.8 216.1 591.2 222.4 594 231C596.8 239.6 594.5 249 588.2 255.4L473.7 369.9L499 529.8C500.4 538.7 496.7 547.7 489.4 553z" />
-                </svg>
-              </div>
-
-              <p>
-                Thereare many variations of passages of Lorem Ipsum available, by injected humour, or randomised words
-                which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
-                be hidden in middle of text. All the Lorem Ipsum generators
-
-
-              </p>
-              <div class="customers">
-                <h3>
-                  Nethon Jr</h3>
-                <h5> Business Owner</h5>
-              </div>
-            </div>
-
-            <div class="testCon">
-              <div class="ratings">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M320.1 417.6C330.1 417.6 340 419.9 349.1 424.6L423.5 462.5L410.5 380C407.3 359.8 414 339.3 428.4 324.8L487.4 265.7L404.9 252.6C384.7 249.4 367.2 236.7 357.9 218.5L319.9 144.1L319.9 417.7zM489.4 553C482.1 558.3 472.4 559.1 464.4 555L320.1 481.6L175.8 555C167.8 559.1 158.1 558.3 150.8 553C143.5 547.7 139.8 538.8 141.2 529.8L166.4 369.9L52 255.4C45.6 249 43.4 239.6 46.2 231C49 222.4 56.3 216.1 65.3 214.7L225.2 189.3L298.8 45.1C302.9 37.1 311.2 32 320.2 32C329.2 32 337.5 37.1 341.6 45.1L415 189.3L574.9 214.7C583.8 216.1 591.2 222.4 594 231C596.8 239.6 594.5 249 588.2 255.4L473.7 369.9L499 529.8C500.4 538.7 496.7 547.7 489.4 553z" />
-                </svg>
-              </div>
-
-              <p>
-                Thereare many variations of passages of Lorem Ipsum available, by injected humour, or randomised words
-                which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
-                be hidden in middle of text. All the Lorem Ipsum generators
-
-
-              </p>
-              <div class="customers">
-                <h3>
-                  Nethon Jr</h3>
-                <h5> Alu Owner</h5>
-              </div>
-            </div>
-
-
-            <div class="testCon">
-              <div class="ratings">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-                <svg xmlns="http://www.w3./2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z" />
-                </svg>
-
-                <svg xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-                  <path
-                    d="M320.1 417.6C330.1 417.6 340 419.9 349.1 424.6L423.5 462.5L410.5 380C407.3 359.8 414 339.3 428.4 324.8L487.4 265.7L404.9 252.6C384.7 249.4 367.2 236.7 357.9 218.5L319.9 144.1L319.9 417.7zM489.4 553C482.1 558.3 472.4 559.1 464.4 555L320.1 481.6L175.8 555C167.8 559.1 158.1 558.3 150.8 553C143.5 547.7 139.8 538.8 141.2 529.8L166.4 369.9L52 255.4C45.6 249 43.4 239.6 46.2 231C49 222.4 56.3 216.1 65.3 214.7L225.2 189.3L298.8 45.1C302.9 37.1 311.2 32 320.2 32C329.2 32 337.5 37.1 341.6 45.1L415 189.3L574.9 214.7C583.8 216.1 591.2 222.4 594 231C596.8 239.6 594.5 249 588.2 255.4L473.7 369.9L499 529.8C500.4 538.7 496.7 547.7 489.4 553z" />
-                </svg>
-              </div>
-
-              <p>
-                Thereare many variations of passages of Lorem Ipsum available, by injected humour, or randomised words
-                which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
-                be hidden in middle of text. All the Lorem Ipsum generators
-
-
-              </p>
-              <div class="customers">
-                <h3>
-                  Rai Jr</h3>
-                <h5> Business Owner</h5>
-              </div>
-            </div>
-
-            <img src="./assets/quotation.png" alt="">
-            <div class="pag">
-              <button class="contActive"></button>
-              <button></button>
-              <button></button>
-            </div>
-          </div>
-
-
-
-          <div class="tests tstImg">
-            <img src="https://matias-react-js.netlify.app/assets/man2-cc1f3830.png" alt="">
-            <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABOCAYAAAB7VKutAAAEXElEQVR4nO2b0XHaQBCG/2R49INSQGbkCoJf/BpRgXEF4ArAFRAqiF2BoQLjCqzXPNmpILIr8EwayFzmX89yCHRCsnTi+GcYyXCSuY/dvb2906dff78icI0B3AG4+hw6CQAXcnKEAfR5fA4dRgIgBpCdn7wGD2PIY4qjm7zHiyUCh9FXLhK8ZYx5TOWNkGGsuQgChrHhIggYxtooIuq19nXa1YL/faG/RagwMgA/7DdDzzPWdIShdIShdIShFBqMsco8NxTSaBKzogV7SBWFZBkzHnNBICAYsXKP+bZGocDQVpFtaxQCDCerQCAwnKwCAcBwtgoEAOORx3mRVeBA84w+X99pGUbfAPwE8GLWR+w6hugQYCTseEIIUU6bofV3xhiy1BbT1bVW0+EJ40FsfZbxc/NaAXhQ19gWY9pemgUkdBBGwtEhUe+98RdO+Roy7TYdHWyJFQbKPaGY6wcGSFfcxFjASEEQACvL/2M1lO4KmsYSTukqI4I59d0ybEswEG4B3PDc1iPbmk5eOdzfuM4TIXq7JSFmx6RzGTv3hbXLPBAz1bYwp6AErtHIRxgT/loJv6zp2Nmu2SZjgBR4r11yCqUVT2OfYIg13NB8F/TrbZagr7vn+Vx1zknnJ68CLvYlZiTsUKRcIjcxytETLSPl6FFWfd7Di/0ZE1pExA6dlQDxk53JHANmnmTnzkvbMGZ0C9DEBwUuYV87lTyhZJzQGvF81SaMmQp687wVrh2aqPZXFUDEagRK24IxrABiZFlTqYBpSQLv0gTSNmDE9HXsCUKG2LLX2pqoePP/nm3AmBFI2iKIWFumDK9Nw9CVpzLRv24QMnrdnp+8vidzTcOQOUZhPVJpViOISM1WN7YlND1rFRi/HdpGavhEDSBg5SUbw3hbU/iiXEJS7D7bXhfMTVx0RxfdWudoGoZA6G/5XCpYU5WaV0mooFwjKbpf0zFDcoKRVa6LCOCJrhBxan1WEURslQF2gm3aMlJWqAyMP/w74peOVJt5ifnJNgmI2NXC2ogZY7rLxKpl1gUB1izYlPguXSysrXR8yqrVgK4g53WAmKk8Ylkm5rRZEH6rqfMiHSixz1B8KCtqCYdOKf1f7gO662utEROpRzXfKVMcWlOXLUMvBIGJ2U3BNTvVRRiRVdzJ6BbPVW/cNRg6NoCJWVH13FldgWFP2spW0J3UhQA6YbY6VYtKp3WDgOeWYa+zphWLv4XyEYbUSGWDScaRokrh10k+wbCn70Ur7rXLBxg2BLCQ47QprU61CSMPQp0z19JqA4Z3EERNwvAWgqgJGN5DEH0kjJjlPe8hiD4CRt72RK8hiOqCEbG2eeGwPdFbVYWREMBYuULjyVJd2gdGpCrbnXOFXXKFkecGUFawqqO40rZ2wdAA+pYbPHfdCvJkw+irOJBYn6Xcob/oWixwVY+/vnnsYGg9qyEWcNAAtHrqKWBwlvigHlc4eABaPVaP5EGVRqfMXgnAP8NrMTIubCCSAAAAAElFTkSuQmCC"
-              alt="">
-          </div>
-
-
-        </div>
-
-    </section>
     <!-- <div class="companies">
           <span class="desc">More than 100+ companies trusted us worldwide</span>
           <div class="companyLogos">
@@ -1030,7 +967,7 @@
     <!-- <section class="companies">
       
     </section> -->
-    <!-- <section class="blogs">
+    <section class="blogs">
       <div>
         <div class="bCTa">
           <h5 class="heading">My Blogs</h5>
@@ -1039,12 +976,12 @@
           </h1>
 
           <div class="clickMore">
-            <a href="#" class="circle-btn">
+            <a href="blog.html" class="circle-btn">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="30" height="30" fill="currentColor">
                 <path
                   d="M566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L406.6 137.3C394.1 124.8 373.8 124.8 361.3 137.3C348.8 149.8 348.8 170.1 361.3 182.6L466.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L466.7 352L361.3 457.4C348.8 469.9 348.8 490.2 361.3 502.7C373.8 515.2 394.1 515.2 406.6 502.7L566.6 342.7z" />
               </svg>
-              <span>Click Here</span>
+              <span>View All Posts</span>
             </a>
 
             <a href="#" class="back">
@@ -1058,16 +995,15 @@
         <div class="blog_s">
           <div class="blog firstBlog">
             <div class="blogName">
-              <h5>
-                October 19, 2023</h5>
-              <h2>Brand design that helps the company grow</h2>
+              <h5>April 20, 2026 · Frontend</h5>
+              <h2>Designing Consistent Components for Portfolio-Scale Projects</h2>
             </div>
 
             <div class="blogImage">
-              <img src="https://matias-react-js.netlify.app/assets/bblog1-fa8177ca.png" alt="Brand Design" />
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="Laptop with code editor open" />
             </div>
 
-            <a href="#" class="icon-btn">
+            <a href="post-consistent-components.html" class="icon-btn">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="24" height="24" fill="currentColor">
                 <path
                   d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
@@ -1078,15 +1014,15 @@
 
           <div class="blog">
             <div class="blogName">
-              <h5>October 19, 2023</h5>
-              <h2>Fresh design ideas & inspiration for 2023</h2>
+              <h5>April 14, 2026 · UI/UX</h5>
+              <h2>What Makes a Portfolio Feel Premium in the First 10 Seconds</h2>
             </div>
 
             <div class="blogImage">
-              <img src="https://matias-react-js.netlify.app/assets/bblog1-fa8177ca.png" alt="Brand Design" />
+              <img src="https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80" alt="Design board with UI sketches" />
             </div>
 
-            <a href="#" class="icon-btn">
+            <a href="post-premium-portfolio.html" class="icon-btn">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="24" height="24" fill="currentColor">
                 <path
                   d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
@@ -1097,15 +1033,15 @@
 
           <div class="blog">
             <div class="blogName">
-              <h5>October 19, 2023</h5>
-              <h2>Fresh design ideas & inspiration for 2023</h2>
+              <h5>April 09, 2026 · JavaScript</h5>
+              <h2>Cleaner JavaScript Patterns I Use in Real Client Projects</h2>
             </div>
 
             <div class="blogImage">
-              <img src="https://matias-react-js.netlify.app/assets/bblog1-fa8177ca.png" alt="Brand Design" />
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" alt="Code on monitor at desk" />
             </div>
 
-            <a href="#" class="icon-btn">
+            <a href="post-javascript-patterns.html" class="icon-btn">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="24" height="24" fill="currentColor">
                 <path
                   d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z" />
@@ -1117,7 +1053,7 @@
 
         </div>
       </div>
-    </section> -->
+    </section>
 
 
 
